@@ -1,0 +1,23 @@
+/* Define the animation keyframes */
+@keyframes gradientAnimation {
+    0% {
+      background-position: 10% 10%;
+    }
+    25% {
+      background-position: 25% 75%;
+    }
+    50% {
+        background-position: 75% 25%;
+    }
+    100% {
+      background-position: 10% 10%;
+    }
+  }
+  
+  /* Apply the gradient animation to an element */
+  .animated-gradient {
+    background: linear-gradient(to bottom, rgb(206, 52, 52), rgb(247, 212, 212));
+    background-size: 100% 200%;
+    animation: gradientAnimation 30s ease infinite; /* Adjust the duration as needed */
+  }
+  
