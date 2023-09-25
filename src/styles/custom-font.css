@@ -1,0 +1,12 @@
+/* custom-font.css */
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/public/pageElements/my-custom-font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply the custom font to an element */
+.custom-font-text {
+  font-family: 'MyCustomFont', sans-serif;
+}
