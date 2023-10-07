@@ -1,7 +1,7 @@
-const Media = () => {  
+const Archive = () => {  
     return (
         <div>Media</div>
     )
  }
 
-export default Media
+export default Archive

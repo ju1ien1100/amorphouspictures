@@ -10,9 +10,10 @@ import RouteLayout from "./services/routeLayout";
 import About from './pages/about';
 import Home from './pages/home';
 import Menu from './pages/menu';
-import Media from './pages/media';
+import Project from './pages/project';
 import Radio from './pages/radio';
 import Research from './pages/research';
+import Archive from './pages/archive';
 
 const routes = [
   {
@@ -32,8 +33,8 @@ const routes = [
         element: <Menu />,
       },
       {
-        path: "/media",
-        element: <Media />,
+        path: "/archive",
+        element: <Archive />,
       },
       {
         path: "/radio",
