@@ -9,24 +9,24 @@
     position: absolute;
     top: 0;
     left: 0; /* Start from the left edge of the container */
-    animation: moveRight1 10s linear infinite; /* Adjust the animation duration as needed */
-    height: 50%;
+    animation: moveRight1 15s linear infinite; /* Adjust the animation duration as needed */
+    height: 60%;
     width: 50%; /* Make the images responsive */
   }
   .moving-image2 {
     position: absolute;
     top: 0;
     left: 0; /* Start from the left edge of the container */
-    animation: moveRight2 10s linear infinite; /* Adjust the animation duration as needed */
-    height: 75%;
-    width: 75%; /* Make the images responsive */
+    animation: moveRight2 13s linear infinite; /* Adjust the animation duration as needed */
+    height: 80%;
+    width: 70%; /* Make the images responsive */
   }
   .moving-image3 {
     position: absolute;
     top: 0;
     left: 0; /* Start from the left edge of the container */
-    animation: moveRight3 10s linear infinite; /* Adjust the animation duration as needed */
-    height: 50%;
+    animation: moveRight3 18s linear infinite; /* Adjust the animation duration as needed */
+    height: 60%;
     width: 50%; /* Make the images responsive */
   }
   
@@ -42,24 +42,24 @@
       transform: translateX(-100%); /* Start from the left edge of the container */
     }
     100% {
-      transform: translateX(100%); /* Move to the right of the container */
+      transform: translateX(200%); /* Move to the right of the container */
     }
   }
   
   /* Keyframes for the second image */
   @keyframes moveRight2 {
     0% {
-      transform: translateX(-60%); /* Start from the middle of the container */
+      transform: translateX(-100%); /* Start from the middle of the container */
     }
     100% {
-      transform: translateX(140%); /* Move to the right of the container */
+      transform: translateX(200%); /* Move to the right of the container */
     }
   }
   
   /* Keyframes for the third image */
   @keyframes moveRight3 {
     0% {
-      transform: translateX(0); /* Start from the right edge of the container */
+      transform: translateX(-200%); /* Start from the right edge of the container */
     }
     100% {
       transform: translateX(200%); /* Move to the right of the container */

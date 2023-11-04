@@ -13,7 +13,7 @@ const RouteLayout = () => {
   const isHomeRoute = location.pathname === '/';
 
   let bodyContent = (
-    <div className="bg-D9D9D9 min-h-screen flex items-center justify-center">
+    <div className="bg-D9D9D9 min-h-screen w-screen flex items-center justify-center">
     <main>
       <Outlet />
     </main>
@@ -21,7 +21,7 @@ const RouteLayout = () => {
     );
     if (isHomeRoute) {
     bodyContent = (
-      <div className="animated-gradient min-h-screen flex items-center justify-center">
+      <div className="animated-gradient min-h-screen w-screen flex items-center justify-center">
         <main>
           <Outlet />
         </main>
