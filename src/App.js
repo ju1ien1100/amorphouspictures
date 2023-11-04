@@ -37,6 +37,10 @@ const routes = [
         element: <Archive />,
       },
       {
+        path: "/projects",
+        element: <Project />,
+      },
+      {
         path: "/radio",
         element: <Radio />,
       },

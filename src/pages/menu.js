@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import "../styles/menu.css"
@@ -6,9 +6,16 @@ import "../styles/menu.css"
 const Menu = () => { 
     const navigate = useNavigate();
 
-    const handleMediaClick = (e) => {
-        navigate("/media");
-    };
+    
+    const [isMediaHovered, setIsMediaHovered] = useState(false);
+
+    const handleArchiveClick = (e) => {
+        navigate('/archive');
+    }
+
+    const handleProjectsClick = (e) => {
+        navigate('/projects');
+    }
 
     const handleRadioClick = (e) => {
         navigate("/radio");
@@ -35,11 +42,30 @@ const Menu = () => {
 
             </div>
             <ul className="flex flex-col items-center justify-center">
-                <h1 
-                className="custom-font-text text-4xl align-center p-1 cursor-pointer"
-                onClick={handleMediaClick}>
-                    Media
-                </h1>
+                {isMediaHovered ? (
+                    // If Media is being hovered over
+                    <>
+                        <h1 
+                        className='custom-font-text text-4xl align-center p-1 cursor-pointer'
+                        onClick={handleArchiveClick}>
+                            Archive
+                        </h1>
+                        <h1 
+                        className='custom-font-text text-4xl align-center p-1 cursor-pointer'
+                        onClick={handleProjectsClick}
+                        onMouseLeave={() => setIsMediaHovered(false)}>
+                            Projects
+                        </h1>
+                    </>
+                ) : (
+                    // If Media is NOT being hovered over
+                    <h1 
+                    className='custom-font-text text-4xl align-center p-1 cursor-pointer'
+                    onMouseEnter={() => setIsMediaHovered(true)}
+                    onMouseLeave={() => setIsMediaHovered(false)}>
+                        Media
+                    </h1>
+                )}
                 <h1 
                 className="custom-font-text text-4xl align-center p-1 cursor-pointer"
                 onClick={handleRadioClick}>
