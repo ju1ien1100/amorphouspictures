@@ -14,6 +14,7 @@ import Project from './pages/project';
 import Radio from './pages/radio';
 import Research from './pages/research';
 import Archive from './pages/archive';
+import Archives from './pages/archives';
 
 const routes = [
   {
@@ -34,7 +35,7 @@ const routes = [
       },
       {
         path: "/archive",
-        element: <Archive />,
+        element: <Archives />,
       },
       {
         path: "/projects",

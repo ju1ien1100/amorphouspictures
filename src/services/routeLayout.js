@@ -10,7 +10,7 @@ import "../styles/pagebody.css"
 const RouteLayout = () => {
   const location = useLocation();
 
-  const isHomeRoute = location.pathname === '/';
+  const isHomeRoute = location.pathname === '/asf';
 
   let bodyContent = (
     <div className="bg-D9D9D9 min-h-screen w-screen flex items-center justify-center">

@@ -4,7 +4,68 @@ import { useNavigate } from "react-router-dom"
 const About = () => {  
   const navigate = useNavigate()
     return (
-        <div className='flex justify-center w-screen h-screen items-center'>
+        <div className="bg-D9D9D9 flex flex-col justify-center items-center overflow-auto">
+
+          <div className="flex-col justify-center items-center">
+
+            {/* 
+              photo
+            */}
+            <div className="flex flex-col justify-center items-center m-12 mt-4">
+              {/* <img
+              className={`mx-auto my-auto border border-black border-4 w-1/2`}
+              src={process.env.PUBLIC_URL + '/pageElements/GabeImage.jpg'}
+              alt="logo"
+              /> */}
+            </div>
+
+            
+            {/* 
+              descr.
+            */}
+            <div className="flex flex-col justify-center align-center items-center m-4 mt-8">
+              <h1 className="custom-font-text text-2xl">
+                ABOUT
+              </h1>
+              <h1 className="custom-font-text p-1">
+                GABRIEL PROATH IS A BRAZILIAN/AMERICAN
+                FILMAKER FROM THE PACIFIC NORTHWEST
+                BASED IN BRITISH COLUMBIA AND CALIFORNIA.
+                THROUGH HIS PRODUCTION COMPANY, AMORPHOUS PICTURES,
+                HE HAS BEEN INDEPENDTLY PRODUCING MULTIMEDIA WORKS 
+                SINCE 2019, INCLUDING FILMS, PHOTOGRAPHY,
+                AND RADIO.
+              </h1>
+
+            </div>
+
+
+            
+            {/* 
+              contact
+            */}
+            <div className="flex flex-col justify-center align-center items-center m-8">
+              <h1 className="custom-font-text text-2xl p-3">
+                CONTACT
+              </h1>
+              <h1 className="custom-font-text text-2xl p-3">
+                GABEPORATH@GMAIL.COM
+              </h1>
+              <h1 className="custom-font-text text-2xl p-3">
+                EMAIL FOR CV/RESUME
+              </h1>
+
+            </div>
+
+          </div>
+
+        </div>
+    )
+}
+
+export default About
+
+{/* <div className='flex justify-center w-screen h-screen items-center'>
           <div className="flex-grow w-1/2 h-full p-5 mt-24">
               <div
               onClick={() => navigate('/menu')}>
@@ -37,8 +98,4 @@ const About = () => {
               alt="logo"
             />
           </div>
-        </div>
-    )
-}
-
-export default About
+        </div> */}
