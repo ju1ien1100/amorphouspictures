@@ -13,7 +13,7 @@ const Projects = () => {
                     </iframe>
                 </div>
 
-                <div className="flex lg:justify-center w-full m-4">
+                <div className="flex lg:justify-center w-full m-4 pb-32">
                     <iframe 
                         className="flex w-full lg:justify-center aspect-video m-4 border-4 border-black"
                         title="Purple Walls"
@@ -21,6 +21,9 @@ const Projects = () => {
                         allow="autoplay; fullscreen; picture-in-picture" 
                         allowfullscreen>
                     </iframe>
+                </div>
+                <div className="pb-64">
+
                 </div>
         </div>
     )

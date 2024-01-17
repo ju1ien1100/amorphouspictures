@@ -31,10 +31,10 @@ const handleArchiveClick = (e) => {
   };
 
   return (
-    <div className="bg-D9D9D9">
-      <div className="flex-col">
+    <div className="flex bg-D9D9D9 overflow-y-auto h-screen hide-scrollbar">
+      <div className="flex-col pb-96 pt-10 overflow-y-auto hide-scrollbar">
 
-      <div className="flex justify-center align-center items-center pt-10">
+      <div className="flex justify-center align-center items-center">
         <h1 
             className="custom-font-text text-3xl align-center cursor-pointer"
             onClick={handleProjectClick}>
@@ -42,14 +42,14 @@ const handleArchiveClick = (e) => {
           </h1>
 
       </div> 
-      <div className="flex-col justify-center h-2/3 w-full">
+      <div className="flex-col justify-center w-full">
       <img
           className="lg:w-2/3 lg:h-1/4 mx-auto my-auto mt-1"
           src={process.env.PUBLIC_URL + '/pageElements/logo_transparent.png'}
           alt="logo"
         />
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center pb-72">
         <h1 
             className="custom-font-text text-3xl cursor-pointer"
             onClick={handleAboutClick}>
@@ -64,8 +64,10 @@ const handleArchiveClick = (e) => {
           </h1>
 
       </div> 
-
     </div>
+    <div className="flex pb-96">
+        
+      </div>
     </div>
     
   );

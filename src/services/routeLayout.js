@@ -17,14 +17,17 @@ const RouteLayout = () => {
     <main>
       <Outlet />
     </main>
-  </div>  
+      </div>  
     );
     if (isHomeRoute) {
     bodyContent = (
-      <div className="animated-gradient min-h-screen w-screen flex sm:items-center pt-10">
-        <main>
+      <div className="flex min-h-screen w-screen justify-center sm:items-center">
+        <main className="flex-grow overflow-auto">
           <Outlet />
         </main>
+        <div className="pb-64">
+
+      </div>
       </div>
     )
   }

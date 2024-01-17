@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom"
 const About = () => {  
   const emailAddress = "gabeporath@gmail.com";
     return (
-        <div className="bg-D9D9D9 flex flex-col overflow-y-auto max-h-screen">
+        <div className="bg-D9D9D9 flex flex-col overflow-y-auto max-h-screen ">
 
-          <div className="flex-col items-center overflow-y-auto lg:pt-4">
+          <div className="flex-col items-center overflow-y-auto pt-10 hide-scrollbar">
 
             {/* 
               photo
@@ -51,16 +51,14 @@ const About = () => {
               <h1 className="custom-font-text text-2xl p-3">
                 GABEPORATH@GMAIL.COM
               </h1>
-              <h1 className="custom-font-text text-2xl p-3 hover:underline">
+              <h1 className="custom-font-text text-2xl p-3 hover:underline pb-64">
                 <a href={`mailto:${emailAddress}`} className="custom-font-text text-2xl p-3">
                   EMAIL FOR CV/RESUME
                 </a>
               </h1>
 
             </div>
-
           </div>
-
         </div>
     )
 }
