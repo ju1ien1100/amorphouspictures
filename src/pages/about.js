@@ -30,7 +30,7 @@ const About = () => {
               <h1 className="custom-font-text text-1xl lg:w-1/3 text-center p-1">
                 GABRIEL PROATH IS A BRAZILIAN/AMERICAN
                 FILMAKER BASED IN BRITISH COLUMBIA AND CALIFORNIA.
-                HE HAS BEEN INDEPENDTLY PRODUCING MULTIMEDIA WORKS 
+                HE HAS BEEN PRODUCING MULTIMEDIA WORKS 
                 SINCE 2019, INCLUDING FILMS, PHOTOGRAPHY,
                 AND RADIO.
               </h1>
