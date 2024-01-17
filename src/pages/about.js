@@ -4,19 +4,19 @@ import { useNavigate } from "react-router-dom"
 const About = () => {  
   const navigate = useNavigate()
     return (
-        <div className="bg-D9D9D9 flex flex-col justify-center items-center overflow-auto">
+        <div className="bg-D9D9D9 flex flex-col items-center">
 
-          <div className="flex-col justify-center items-center">
+          <div className="flex-col items-center">
 
             {/* 
               photo
             */}
-            <div className="flex flex-col justify-center items-center m-12 mt-4">
-              {/* <img
+            <div className="flex flex-col justify-center items-center m-12 mt-0">
+              <img
               className={`mx-auto my-auto border border-black border-4 w-1/2`}
-              src={process.env.PUBLIC_URL + '/pageElements/GabeImage.jpg'}
+              src={process.env.PUBLIC_URL + '/gabeimg.jpg'}
               alt="logo"
-              /> */}
+              />
             </div>
 
             
@@ -27,7 +27,7 @@ const About = () => {
               <h1 className="custom-font-text text-2xl">
                 ABOUT
               </h1>
-              <h1 className="custom-font-text p-1">
+              <h1 className="custom-font-text lg:w-1/3 text-center p-1">
                 GABRIEL PROATH IS A BRAZILIAN/AMERICAN
                 FILMAKER FROM THE PACIFIC NORTHWEST
                 BASED IN BRITISH COLUMBIA AND CALIFORNIA.
