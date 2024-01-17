@@ -10,7 +10,7 @@ import "../styles/pagebody.css"
 const RouteLayout = () => {
   const location = useLocation();
 
-  const isHomeRoute = location.pathname === '/asf';
+  const isHomeRoute = location.pathname === '/';
 
   let bodyContent = (
     <div className="bg-D9D9D9 min-h-screen w-screen flex items-center justify-center">
@@ -21,7 +21,7 @@ const RouteLayout = () => {
     );
     if (isHomeRoute) {
     bodyContent = (
-      <div className="animated-gradient min-h-screen w-screen flex items-center justify-center">
+      <div className="animated-gradient min-h-screen w-screen flex sm:items-center pt-10">
         <main>
           <Outlet />
         </main>

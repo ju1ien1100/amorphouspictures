@@ -13,10 +13,12 @@
       background-position: 10% 10%;
     }
   }
+
+
   
   /* Apply the gradient animation to an element */
   .animated-gradient {
-    background: linear-gradient(to bottom, rgb(206, 52, 52), rgb(247, 212, 212));
+    background: linear-gradient(to bottom, rgb(93, 92, 92), rgb(212, 207, 207));
     background-size: 100% 200%;
     animation: gradientAnimation 30s ease infinite; /* Adjust the duration as needed */
   }

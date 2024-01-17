@@ -31,10 +31,10 @@ const handleArchiveClick = (e) => {
   };
 
   return (
-    <div className="bg-D9D9D9 justify-center items-center">
-      <div className="flex-col justify-center items-center">
+    <div className="bg-D9D9D9">
+      <div className="flex-col">
 
-      <div className="flex justify-center align-center items-center">
+      <div className="flex justify-center align-center items-center pt-10">
         <h1 
             className="custom-font-text text-3xl align-center cursor-pointer"
             onClick={handleProjectClick}>

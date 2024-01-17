@@ -2,11 +2,11 @@ import React from "react"
 import { useNavigate } from "react-router-dom"
 
 const About = () => {  
-  const navigate = useNavigate()
+  const emailAddress = "gabeporath@gmail.com";
     return (
-        <div className="bg-D9D9D9 flex flex-col items-center">
+        <div className="bg-D9D9D9 flex flex-col overflow-y-auto max-h-screen">
 
-          <div className="flex-col items-center">
+          <div className="flex-col items-center overflow-y-auto lg:pt-4">
 
             {/* 
               photo
@@ -51,8 +51,10 @@ const About = () => {
               <h1 className="custom-font-text text-2xl p-3">
                 GABEPORATH@GMAIL.COM
               </h1>
-              <h1 className="custom-font-text text-2xl p-3">
-                EMAIL FOR CV/RESUME
+              <h1 className="custom-font-text text-2xl p-3 hover:underline">
+                <a href={`mailto:${emailAddress}`} className="custom-font-text text-2xl p-3">
+                  EMAIL FOR CV/RESUME
+                </a>
               </h1>
 
             </div>
