@@ -13,7 +13,7 @@ const About = () => {
             */}
             <div className="flex flex-col justify-center items-center m-12 mt-0">
               <img
-              className={`mx-auto my-auto border border-black border-4 w-1/2`}
+              className={`mx-auto max-w-[500px] my-auto max-h-[500px] border border-black border-4 w-1/2`}
               src={process.env.PUBLIC_URL + '/gabeimg.jpg'}
               alt="logo"
               />
@@ -27,11 +27,9 @@ const About = () => {
               <h1 className="custom-font-text text-2xl">
                 ABOUT
               </h1>
-              <h1 className="custom-font-text lg:w-1/3 text-center p-1">
+              <h1 className="custom-font-text text-1xl lg:w-1/3 text-center p-1">
                 GABRIEL PROATH IS A BRAZILIAN/AMERICAN
-                FILMAKER FROM THE PACIFIC NORTHWEST
-                BASED IN BRITISH COLUMBIA AND CALIFORNIA.
-                THROUGH HIS PRODUCTION COMPANY, AMORPHOUS PICTURES,
+                FILMAKER BASED IN BRITISH COLUMBIA AND CALIFORNIA.
                 HE HAS BEEN INDEPENDTLY PRODUCING MULTIMEDIA WORKS 
                 SINCE 2019, INCLUDING FILMS, PHOTOGRAPHY,
                 AND RADIO.
