@@ -28,11 +28,10 @@ const About = () => {
                 ABOUT
               </h1>
               <h1 className="custom-font-text text-1xl lg:w-1/3 text-center p-1">
-                GABRIEL PROATH IS A BRAZILIAN/AMERICAN
-                FILM MAKER BASED IN BRITISH COLUMBIA AND CALIFORNIA.
+                GABRIEL PORATH IS A BRAZILIAN/AMERICAN
+                FILMMAKER BASED IN BRITISH COLUMBIA AND CALIFORNIA.
                 HE HAS BEEN PRODUCING MULTIMEDIA WORKS 
-                SINCE 2019, INCLUDING FILMS, PHOTOGRAPHY,
-                AND RADIO.
+                SINCE 2019, INCLUDING FILMS, PHOTOGRAPHY, RADIO, AND UI/UX.
               </h1>
 
             </div>
