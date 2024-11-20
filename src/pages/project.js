@@ -39,7 +39,7 @@ const Projects = () => {
                 </div>
                 <div className="flex flex-col lg:justify-center w-2/3 m-4 pb-32">
                     <h1 className="lg:text-3xl text font-bold custom-font-text lg:mx-4">AWOL</h1>
-                    <h1 className="lg:text-xl text custom-font-text lg:mx-4">DIRECTOR/WR</h1>
+                    <h1 className="lg:text-xl text custom-font-text lg:mx-4">DIRECTOR/WRITER</h1>
                     <iframe 
                         className="flex w-full lg:justify-center aspect-video lg:mx-4 border-4 border-black bg-black"
                         title="Purple Walls"

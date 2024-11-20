@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 const About = () => {  
   const emailAddress = "gabeporath@gmail.com";
     return (
-        <div className="bg-D9D9D9 flex flex-row overflow-y-auto max-h-screen ">
+        <div className="bg-D9D9D9 flex flex-row overflow-y-auto max-h-screen">
 
           <div className="flex-row items-center overflow-y-auto pt-10 hide-scrollbar">
 
@@ -49,14 +49,14 @@ const About = () => {
             {/* 
               photo
             */}
-            <div className="flex flex-row justify-center items-center m-12 mt-0">
+            <div className="flex flex-row justify-center items-center m-12 mt-0 pb-64">
               <img
-              className={`mx-auto my-auto border border-black border-4 w-1/2`}
+              className={`mx-[250px] my-auto border border-black border-4 w-1/2`}
               src={process.env.PUBLIC_URL + '/pageElements/AboutPhoto.jpg'}
               alt="logo"
               />
             </div>
-
+            <div className="pb-32"></div>
             
             
           </div>
