@@ -12,14 +12,13 @@ const FolderDropdown = () => {
       'Japan4.png',
       'Japan5.png',
       'Japan6.png',
+      'Japan7.png',
       'Japan8.png',
+      'Japan9.png',
       'Japan10.png',
       'Japan11.png',
       'Japan12.png',
       'Japan13.png',
-      'Japan14.png',
-      'Japan15.png',
-      'Japan16.png',
     ],
     'BULL_FIGHTING_2022': ['000016630002.jpg', '000016630003.jpg', '000016630009.jpg'],
       'JOSHUA_TREE_2021': [
@@ -79,7 +78,7 @@ const FolderDropdown = () => {
   };
 
   return (
-    <div className="flex flex-col items-center h-screen overflow-y-auto hide-scrollbar">
+    <div className="flex flex-col lg:items-center mx-4 h-screen overflow-y-auto hide-scrollbar">
       {Object.keys(folders).map((folderName) => (
         <div key={folderName} className="flex flex-row mb-4 m w-1/4 items-center">
         <div className="flex flex-col">
@@ -111,7 +110,7 @@ const FolderDropdown = () => {
         </div>
 
       ))}
-      <div className="pb-36">
+      <div className="pb-32">
 
       </div>
     </div>
