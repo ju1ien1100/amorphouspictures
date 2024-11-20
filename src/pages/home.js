@@ -36,9 +36,9 @@ const handleArchiveClick = (e) => {
 
       <div className="flex justify-center align-center items-center">
         <h1 
-            className="custom-font-text text-3xl align-center cursor-pointer hover:underline"
+            className="custom-font-text text-3xl align-center cursor-pointer hover:underline blur-text"
             onClick={handleProjectClick}>
-                PROJECTS
+                MEDIA
           </h1>
 
       </div> 
@@ -51,16 +51,16 @@ const handleArchiveClick = (e) => {
       </div>
       <div className="flex justify-center pb-72">
         <h1 
-            className="custom-font-text text-3xl cursor-pointer hover:underline"
+            className="custom-font-text text-3xl cursor-pointer hover:underline blur-text"
             onClick={handleAboutClick}>
                 CONTACT
           </h1>
           <div className="w-1/3 p-5">
           </div>
           <h1 
-            className="custom-font-text text-3xl cursor-pointer hover:underline"
+            className="custom-font-text text-3xl cursor-pointer hover:underline blur-text"
             onClick={handleArchiveClick}>
-                ARCHIVE
+                PHOTOS
           </h1>
 
       </div> 

@@ -4,26 +4,32 @@ import { useNavigate } from "react-router-dom"
 const About = () => {  
   const emailAddress = "gabeporath@gmail.com";
     return (
-        <div className="bg-D9D9D9 flex flex-col overflow-y-auto max-h-screen ">
+        <div className="bg-D9D9D9 flex flex-row overflow-y-auto max-h-screen ">
 
-          <div className="flex-col items-center overflow-y-auto pt-10 hide-scrollbar">
+          <div className="flex-row items-center overflow-y-auto pt-10 hide-scrollbar">
 
-            {/* 
-              photo
+                        {/* 
+              contact
             */}
-            <div className="flex flex-col justify-center items-center m-12 mt-0">
-              <img
-              className={`mx-auto max-w-[500px] my-auto max-h-[500px] border border-black border-4 w-1/2`}
-              src={process.env.PUBLIC_URL + '/gabeimg.jpg'}
-              alt="logo"
-              />
+            <div className="flex flex-col justify-center align-center items-center m-8">
+              <h1 className="custom-font-text text-2xl p-3">
+                CONTACT
+              </h1>
+              <h1 className="custom-font-text text-2xl p-3">
+                GABEPORATH@GMAIL.COM
+              </h1>
+              <h1 className="custom-font-text text-2xl p-3 hover:underline">
+                <a href={`mailto:${emailAddress}`} className="custom-font-text text-2xl p-3">
+                  EMAIL FOR CV/RESUME
+                </a>
+              </h1>
+
             </div>
 
-            
             {/* 
               descr.
             */}
-            <div className="flex flex-col justify-center align-center items-center m-4 mt-8">
+            <div className="flex flex-col justify-center align-center items-center m-4 mt-8 pb-16">
               <h1 className="custom-font-text text-2xl">
                 ABOUT
               </h1>
@@ -38,23 +44,21 @@ const About = () => {
 
 
             
-            {/* 
-              contact
-            */}
-            <div className="flex flex-col justify-center align-center items-center m-8">
-              <h1 className="custom-font-text text-2xl p-3">
-                CONTACT
-              </h1>
-              <h1 className="custom-font-text text-2xl p-3">
-                GABEPORATH@GMAIL.COM
-              </h1>
-              <h1 className="custom-font-text text-2xl p-3 hover:underline pb-64">
-                <a href={`mailto:${emailAddress}`} className="custom-font-text text-2xl p-3">
-                  EMAIL FOR CV/RESUME
-                </a>
-              </h1>
 
+
+            {/* 
+              photo
+            */}
+            <div className="flex flex-row justify-center items-center m-12 mt-0">
+              <img
+              className={`mx-auto my-auto border border-black border-4 w-1/2`}
+              src={process.env.PUBLIC_URL + '/pageElements/AboutPhoto.jpg'}
+              alt="logo"
+              />
             </div>
+
+            
+            
           </div>
         </div>
     )

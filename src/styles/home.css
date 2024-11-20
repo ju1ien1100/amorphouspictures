@@ -12,3 +12,12 @@
     animation: animateUp 1.5s ease-out forwards;
   }
   
+  /* Add these CSS classes */
+.blur-text {
+  filter: blur(2px);
+  transition: filter 0.3s ease;
+}
+
+.blur-text:hover {
+  filter: blur(0);
+}

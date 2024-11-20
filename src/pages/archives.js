@@ -67,7 +67,7 @@ const FolderDropdown = () => {
   return (
     <div className="flex flex-col items-center h-screen overflow-y-auto hide-scrollbar">
       {Object.keys(folders).map((folderName) => (
-        <div key={folderName} className="flex flex-row mb-4 w-full items-center">
+        <div key={folderName} className="flex flex-row mb-4 m w-1/4 items-center">
         <div className="flex flex-col">
         <button
             onClick={() => toggleDropdown(folderName)}
