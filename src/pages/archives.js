@@ -13,12 +13,6 @@ const FolderDropdown = () => {
       'Japan5.png',
       'Japan6.png',
       'Japan7.png',
-      'Japan8.png',
-      'Japan9.png',
-      'Japan10.png',
-      'Japan11.png',
-      'Japan12.png',
-      'Japan13.png',
     ],
     'BULL_FIGHTING_2022': ['000016630002.jpg', '000016630003.jpg', '000016630009.jpg'],
       'JOSHUA_TREE_2021': [
