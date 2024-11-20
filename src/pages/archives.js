@@ -5,11 +5,23 @@ const FolderDropdown = () => {
   const [openFolder, setOpenFolder] = useState(null);
 
   const folders = {
+    'TAI_MODERN_GALLERY_2024' : [
+      'Japan1.png',
+      'Japan2.png',
+      'Japan3.png',
+      'Japan4.png',
+      'Japan5.png',
+      'Japan6.png',
+      'Japan8.png',
+      'Japan10.png',
+      'Japan11.png',
+      'Japan12.png',
+      'Japan13.png',
+      'Japan14.png',
+      'Japan15.png',
+      'Japan16.png',
+    ],
     'BULL_FIGHTING_2022': ['000016630002.jpg', '000016630003.jpg', '000016630009.jpg'],
-    'GUNS_2019': [
-        '000040000002.jpg',
-        '000040000009.jpg',
-      ],
       'JOSHUA_TREE_2021': [
         '00000287010.jpg',
         '00000499700.jpg',
@@ -42,10 +54,6 @@ const FolderDropdown = () => {
         '000039990025.jpg',
         '000048290025.jpg',
       ],
-      'TAKING_MOMS_KEYS_2019': [
-        '000048290013.jpg',
-        '000048290021.jpg',
-      ],
       'WEALTH_2021_22': [
         '000008790007.jpg',
         '000008790010.jpg',
@@ -62,6 +70,12 @@ const FolderDropdown = () => {
     } else {
       setOpenFolder(folderName);
     }
+  };
+
+  const getImagePath = (folderName, file) => {
+    const fileExtension = file.split('.').pop().toLowerCase();
+    const mediaType = fileExtension === 'png' ? 'png' : 'jpeg_';
+    return `${process.env.PUBLIC_URL}/${mediaType}/${folderName}/${file}`;
   };
 
   return (
@@ -85,7 +99,7 @@ const FolderDropdown = () => {
               {folders[folderName].map((file, index) => (
                 <a
                   key={index}
-                  href={`${process.env.PUBLIC_URL}/jpeg_/${folderName}/${file}`}
+                  href={getImagePath(folderName, file)}
                   className="p-1 hover:bg-neutral-300 rounded text-center"
                 >
                   {file}
