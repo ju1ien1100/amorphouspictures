@@ -15,7 +15,7 @@ const Projects = () => {
                     </iframe>
                 </div>
                 <div className="flex flex-col lg:justify-center w-2/3 m-4">
-                    <h1 className="lg:text-3xl text font-bold custom-font-text lg:mx-4">WORLD OF OUTLAWS (VFW)</h1>
+                    <h1 className="lg:text-3xl text font-bold custom-font-text lg:mx-4">RUN FOR THE HILLS (VFW)</h1>
                     <h1 className="lg:text-xl text custom-font-text lg:mx-4">CINEMATOGRAPHER/PRODUCER</h1>
                     <iframe 
                         className="flex w-full lg:justify-center aspect-video lg:mx-4 border-4 border-black bg-black"
