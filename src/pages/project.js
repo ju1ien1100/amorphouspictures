@@ -37,17 +37,6 @@ const Projects = () => {
                         allowfullscreen>
                     </iframe>
                 </div>
-                <div className="flex flex-col lg:justify-center w-2/3 m-4 pb-32">
-                    <h1 className="lg:text-3xl text font-bold custom-font-text lg:mx-4">AWOL</h1>
-                    <h1 className="lg:text-xl text custom-font-text lg:mx-4">DIRECTOR/WRITER</h1>
-                    <iframe 
-                        className="flex w-full lg:justify-center aspect-video lg:mx-4 border-4 border-black bg-black"
-                        title="Purple Walls"
-                        src="https://player.vimeo.com/video/742317376?h=32b43eaaa4&title=0&byline=0&portrait=0"
-                        allow="autoplay; fullscreen; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
 
                 <div className="pb-32">
 
